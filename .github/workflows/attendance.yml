@@ -88,7 +88,7 @@ jobs:
               await github.rest.repos.update({
                 owner: 'OctoHigh',
                 repo: `challenge-1-${process.env.LOGIN}`,
-                private: true
+                private: false
               });
               
               console.log('Adding player as collaborator of repo 1 ...');
@@ -105,7 +105,7 @@ jobs:
               await github.rest.repos.update({
                 owner: 'OctoHigh',
                 repo: `challenge-2-${process.env.LOGIN}`,
-                private: true
+                private: false
               });
               
               console.log('Adding player as collaborator of repo 2 ...');
